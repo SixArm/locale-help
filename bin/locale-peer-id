@@ -1,0 +1,17 @@
+#!/bin/sh
+#
+# Print a locale peer id.
+#
+# A local peer id is:
+#
+# * A  32-character lowercase hexadecimal string.
+#
+# * Created by a secure random generator such as /dev/urandom.
+#
+# A locale peer id is not a UUID:
+#
+# * A locale peer id is deliberately entirely random, whereas a UUID has variations, and even the UUID-4 random variation is not entirely random.
+#
+# * A locale peer id specifies the use of a secure random generator such as `/dev/urandom`, whereas a UUID is not entirely random and does not specify the use of a a secure random generator.
+#
+printf "%s\n" $(LC_ALL=C < /dev/urandom tr -dc '0-9a-f' | head -c32 )
