@@ -1,0 +1,34 @@
+#!/bin/sh
+#
+# slug-case: change the text to be one slug, and the separator is a hyphen-minus.
+#
+# Examples:
+#
+#     $ echo "Foo Goo Hoo" | slug-case
+#     foo-goo-hoo
+#
+#     $ echo "Alpha@bravo Charlie&delta Echo*foxtrot" | slug-case
+#     alpha-bravo-charlie-delta-echo-foxtrot
+#
+#     $ echo "Can't Stop Won't Stop" | slug-case
+#     cant-stop-wont-stop
+#
+# The script does this:
+#
+#   * Delete any quotation mark.
+#
+#   * Translate any non-alphanumeric to a separator i.e. hyphen-minus.
+#
+#   * Flatten any separator run.
+# 
+#   * Trim any leading/trailing separator.
+#
+#   * Change case to lower case.
+#
+# Note that slug-case and word-case are identical except:
+#
+#   * slug-case uses a hyphen-minus; word-case uses a low line.
+#
+#   * slug-case coverts to lower-case; word-case preserves capitalization.
+#
+perl -pe "use open ':std', ':encoding(UTF-8)'; s/\p{Quotation_Mark}//g; s/[^[:alnum:]]/-/g; s/--+/-/g; s/^-//; s/-$//; \$_=lc(\$_)"
