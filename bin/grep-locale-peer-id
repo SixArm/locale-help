@@ -1,0 +1,13 @@
+#!/bin/sh
+#
+# Use grep to find all files that match a locale peer id.
+#
+# Syntax:
+#
+#     grep-locale-peer-id <id> [path]
+#
+# Example:
+#
+#     grep-locale-peer-id f02097a67b770c3b03ef750b1b3d2b57 ~/myproject/locales
+#
+grep -r --include .locale-peer-id "$1" "${2:-.}"
