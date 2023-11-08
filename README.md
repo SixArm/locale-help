@@ -1,4 +1,4 @@
-# Locales help
+# Locale help
 
 Locales help that explains how people can translate this project into worldwide languages.
 
