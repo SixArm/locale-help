@@ -1,6 +1,6 @@
-# Locales
+# Locales help
 
-Locales help people translate this project into multiple worldwide languages.
+Locales help that explains how people can translate this project into worldwide languages.
 
 
 ## Locale subdirectory names
@@ -47,21 +47,26 @@ Examples:
 
 Content subdirectory names should use a slug format, which means a format that is user-friendly for copying, pasting, typing, and browsing. 
 
-Our preferred slug format for English is alphanumeric lowercase with separators that are dashes that are hyphen-minus characters.
+Example:
+
+* `locale/en/hello-world`
+
+
+### Slug format for English
+
+Our slug format for English is alphanumeric lowercase characters plus a separator which is the hyphen-minus character.
 
 Right:
 
-* `locale/en/alpha-bravo-charie`
+* `locale/en/hello-world`
 
 Wrong:
 
-* `locale/en/Alpha-Bravo-Charlie` (because it uses mixed case)
+* `locale/en/Hello-World` (because it uses uppercase letters)
 
-* `locale/en/alpha bravo charlie` (because it uses spaces)
+* `locale/en/hello world` (because it uses a space)
 
-* `locale/en/alpha@bravo@charlie` (because it uses symbols)
-
-* `locale/en/alphabravocharlie` (because it doesn't use separators)
+* `locale/en/hello+world` (because it uses a symbol)
 
 
 ## locale peer id
@@ -78,13 +83,6 @@ For example:
 
 * b82232cff8e5bb785fbc855b65a83653
 
-A locale peer id is NOT a UUID, beacuse a locale peer id is totally random on purpose.
-
-For example one way to generate a locale peer id is this shell command:
-
-```sh
-printf "%s\n" $(LC_ALL=C < /dev/urandom tr -dc '0-9a-f' | head -c32 )
-```
 
 ## .local-peer-id file
 
@@ -105,3 +103,16 @@ For example each directory below contains a file named `.locale-peer-id` and eac
 * `locales/ar/مرحبًا/.locale-peer-id`
 
 If you want to create a translation of a directory and its contents, you must use the same locale peer id and put in a file named `.locale-peer-id`, because this is what's necessary for the project team to track translations across languages.
+
+
+###  For programmers
+
+If you are a programmer, then see these tools which may help you:
+
+* <bin/local-peer-id>: generate a locale peer id
+
+* <bin/grep-locale-peer-id>: find files that contain a given locale peer id
+
+* <bin/markdown-stream-to-headline-1>: input a markdown stream; output the first headline
+
+* <bin/slug-case>: input a line of text; output the text converted to slug case
