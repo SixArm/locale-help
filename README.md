@@ -32,9 +32,9 @@ Content subdirectory names should be translated into their corresponding languag
 
 Examples:
 
-* `locale/en/hello/`
+* `locales/en/hello/`
 
-* `locale/zh/你好/`
+* `locales/zh/你好/`
 
 * `locales/hi/नमस्ते/`
 
@@ -49,7 +49,7 @@ Content subdirectory names should use a slug format, which means a format that i
 
 Example:
 
-* `locale/en/hello-world`
+* `locales/en/hello-world`
 
 
 ### Slug format for English
@@ -58,15 +58,15 @@ Our slug format for English is alphanumeric lowercase characters plus a separato
 
 Right:
 
-* `locale/en/hello-world`
+* `locales/en/hello-world`
 
 Wrong:
 
-* `locale/en/Hello-World` (because it uses uppercase letters)
+* `locales/en/Hello-World` (because it uses uppercase letters)
 
-* `locale/en/hello world` (because it uses a space)
+* `locales/en/hello world` (because it uses a space)
 
-* `locale/en/hello+world` (because it uses a symbol)
+* `locales/en/hello+world` (because it uses a symbol)
 
 
 ## locale peer id
@@ -92,9 +92,9 @@ When anyone translates any project directory from one language into another, the
 
 For example each directory below contains a file named `.locale-peer-id` and each file contains the identical locale peer id:
 
-* `locale/en/hello/.local-peer-id`
+* `locales/en/hello/.local-peer-id`
 
-* `locale/zh/你好/.local-peer-id`
+* `locales/zh/你好/.local-peer-id`
 
 * `locales/hi/नमस्ते/.locale-peer-id`
 
