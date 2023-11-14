@@ -113,6 +113,6 @@ If you are a programmer, then see these tools which may help you:
 
 * [bin/grep-locale-peer-id](bin/grep-locale-peer-id): find files that contain a given locale peer id
 
-* [bin/markdown-stream-to-headline-1](bin/markdown-stream-to-headline-1: input a markdown stream; output the first headline
+* [bin/markdown-read-to-headline](bin/markdown-read-to-headline): markdown tool to read a file or stdin, then print the first headline
 
 * [bin/slug-case](bin/slug-case): input a line of text; output the text converted to slug case
