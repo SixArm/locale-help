@@ -23,7 +23,7 @@ Examples:
 
 For a list of ISO 639-1 codes:
 
-* <https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>
+* [https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
 
 
 ## Content subdirectory names
@@ -109,10 +109,10 @@ If you want to create a translation of a directory and its contents, you must us
 
 If you are a programmer, then see these tools which may help you:
 
-* <bin/local-peer-id>: generate a locale peer id
+* [bin/local-peer-id](bin/local-peer-id): generate a locale peer id
 
-* <bin/grep-locale-peer-id>: find files that contain a given locale peer id
+* [bin/grep-locale-peer-id](bin/grep-locale-peer-id): find files that contain a given locale peer id
 
-* <bin/markdown-stream-to-headline-1>: input a markdown stream; output the first headline
+* [bin/markdown-stream-to-headline-1](bin/markdown-stream-to-headline-1: input a markdown stream; output the first headline
 
-* <bin/slug-case>: input a line of text; output the text converted to slug case
+* [bin/slug-case](bin/slug-case): input a line of text; output the text converted to slug case
