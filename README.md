@@ -109,7 +109,7 @@ If you want to create a translation of a directory and its contents, you must us
 
 If you are a programmer, then see these tools which may help you:
 
-* [bin/local-peer-id](bin/local-peer-id): generate a locale peer id
+* [bin/locale-peer-id](bin/locale-peer-id): generate a locale peer id
 
 * [bin/grep-locale-peer-id](bin/grep-locale-peer-id): find files that contain a given locale peer id
 
