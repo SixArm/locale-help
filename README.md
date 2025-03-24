@@ -75,7 +75,7 @@ This project keeps track of corresponding content across multiple locales by usi
 
 A locale peer id is a secure randomly-generated 32-character lowercase hexadecimal string.
 
-For example:
+For example, here are three locale peer id strings:
 
 * abc7c72d426bc75e40b25a44ae37ce73
 
@@ -84,7 +84,7 @@ For example:
 * b82232cff8e5bb785fbc855b65a83653
 
 
-## .local-peer-id file
+## .locale-peer-id file
 
 Each directory contains a file named `.locale-peer-id` that contains the locale peer id.
 
@@ -92,9 +92,9 @@ When anyone translates any project directory from one language into another, the
 
 For example each directory below contains a file named `.locale-peer-id` and each file contains the identical locale peer id:
 
-* `locales/en/hello/.local-peer-id`
+* `locales/en/hello/.locale-peer-id`
 
-* `locales/zh/你好/.local-peer-id`
+* `locales/zh/你好/.locale-peer-id`
 
 * `locales/hi/नमस्ते/.locale-peer-id`
 
