@@ -54,7 +54,7 @@ Example:
 
 ### Slug format for English
 
-Our slug format for English is alphanumeric lowercase characters plus a separator which is the hyphen-minus character.
+Our slug format for English is alphanumeric lowercase characters with words separated by a hyphen-minus character. We use this format because it improves readability, usability, searchability, and similar user goals.
 
 Right:
 
@@ -62,12 +62,13 @@ Right:
 
 Wrong:
 
-* `locales/en/Hello-World` (because it uses uppercase letters)
+* `locales/en/Hello-World` (uses uppercase letters)
 
-* `locales/en/hello world` (because it uses a space)
+* `locales/en/hello world` (uses a space character)
 
-* `locales/en/hello+world` (because it uses a symbol)
+* `locales/en/hello+world` (uses a cross-plus character)
 
+* `locales/en/helloworld` (doesn't separate words)
 
 ## locale peer id
 
@@ -105,7 +106,7 @@ For example each directory below contains a file named `.locale-peer-id` and eac
 If you want to create a translation of a directory and its contents, you must use the same locale peer id and put in a file named `.locale-peer-id`, because this is what's necessary for the project team to track translations across languages.
 
 
-###  For programmers
+### For programmers
 
 If you are a programmer, then see these tools which may help you:
 
